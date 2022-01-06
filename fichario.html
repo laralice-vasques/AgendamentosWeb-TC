@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+
+        <title>Calendario</title>
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" type="text/css" href="css/estilo-interno.css">
+
+        <link rel="stylesheet" type="text/css" href="css/estilo-mediaqueries.css">
+
+    </head>
+    <body class="body-fichario">
+
+        <header> 
+
+            <ul>
+                <li>aqui no topo terá o mural de notificações left e o login do usuário right</li>
+                <li>
+                    <div class="float-right"> <img style="width: 40px;" src="imagens/perfil.png"> </div>
+                    <div class="float-left" style="margin-top: 10px;"> Usuário </div>
+                </li>
+            </ul>
+            
+        </header>
+
+        <div class="container-principal"> <!-- início do container principal -->
+
+            <nav class="col-2 menu"> <!-- início da lateral esquerda -->
+                
+                <div class="menu"> <!-- Início da div que contém o menu -->
+                    <ul>
+                        <li>
+                            <a id="link-calendario" href="calendario.html">Calendário</a> 
+                        </li>
+                        <li>
+                            <a id="link-fichario" href="fichario.html">Fichário</a>
+                        </li>
+                        <li>
+                            <a id="link-financas" href="financas.html">Finanças</a>
+                        </li>
+                    </ul>
+                </div> <!-- fim da div que contém o menu -->
+
+            </nav> <!-- fim da lateral esquerda -->
+    
+            <div class="col-10">  <!-- início da coluna do meio -->
+
+                <div class="coluna-central">
+
+                    <div class="sub-topo">
+
+                        <ul>
+                            <li></li>
+                            <li>Filtrar as fichas, ordem alfabetica, ultima visita, anotações...</li>
+                        </ul>
+
+                   </div>
+
+                    <div class="conteudo">
+
+                        lista de clientes em ordem alfabética por default, ao clicar em ver mais, mostra mais dados do cliente
+
+                        <!-- essa lista deve ser dinamica, o id da classe onde fica as demais informações do cliente deve ser gerado
+                        automaticamente pra ser passado pra função -->
+
+                        <!--alterar também o ver mais para ver menos quando a div estiver a mostra-->
+
+                        <div class="linha">
+
+                            <div>Cliente tal</div>
+
+                            <button onclick="mostrarEsconderInformacoesDoCliente('cliente-1-info')" class="float-right verMais">ver mais</button>
+                            
+                            <div id="cliente-1-info" class="display-none">
+                                <a href="ficha-cliente.html" class="textCenter float-right">Visualizar<br>ficha</a>
+                                ultima data de visita <br> anotacoes <br> alergias...
+                                
+                            </div>
+
+                        </div>
+                        <div class="linha">
+
+                            <div>Cliente tal</div>
+
+                            <button onclick="mostrarEsconderInformacoesDoCliente('cliente-2-info')" class="float-right verMais">ver mais</button>
+                            
+                            <div id="cliente-2-info" class="display-none">
+                                <a href="ficha-cliente.html" class="textCenter float-right">Visualizar<br>ficha</a>
+                                ultima data de visita <br> anotacoes <br> alergias...
+                                
+                            </div>
+
+                        </div>
+                        <div class="linha">
+
+                            <div>Cliente tal</div>
+
+                            <button onclick="mostrarEsconderInformacoesDoCliente('cliente-3-info')" class="float-right verMais">ver mais</button>
+                            
+                            <div id="cliente-3-info" class="display-none">
+                                <a href="ficha-cliente.html" class="textCenter float-right">Visualizar<br>ficha</a>
+                                ultima data de visita <br> anotacoes <br> alergias...
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div> 
+
+            </div> <!-- fim da coluna do meio -->
+
+        </div> <!-- fim do container principal -->
+
+        <footer> aqui é o rodapé </footer>
+
+        <script src="js/fichario.js"></script>
+    </body>
+</html>

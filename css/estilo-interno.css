@@ -1,0 +1,190 @@
+/* as páginas estão repartidas assim
+
+html {
+    body{
+
+        header (aqui dentro tem uma ul)
+
+        container-principal{
+
+            nav col-2
+
+            col-10{
+                coluna-central{
+                    sub-topo (aqui dentro tem uma ul)
+                    conteudo
+                }
+            }
+
+        }
+
+        footer
+    }
+}
+
+*/
+
+
+/*----------------------------MEDIA QUERIES----------------------------------*/
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.container-principal::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;    
+}
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;} /*laterais*/
+    .col-3 {width: 25%;} 
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;} 
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;} 
+    .col-10 {width: 83.33%;} /*conteúdo central*/
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+/*------------------------------------------------------------------------------------*/
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: rgba(255, 0, 106, 0.5); /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, rgba(255, 131, 189, 0.5), rgba(255, 115, 145, 0.5), rgba(255, 0, 106, 0.5)); /* Safari */
+	background: -o-radial-gradient(circle, rgba(255, 131, 189, 0.5), rgba(255, 115, 145, 0.5), rgba(255, 0, 106, 0.5)); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, rgba(255, 131, 189, 0.5), rgba(255, 115, 145, 0.5), rgba(255, 0, 106, 0.5)); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, rgba(255, 131, 189, 0.5), rgba(255, 115, 145, 0.5), rgba(255, 0, 106, 0.5)); /* Standard syntax */;
+}
+
+
+/*-------------------conteudo - a parte do meio, que fica do lado do menu - calendario, fichario, finanças------------------------------*/
+.coluna-central{
+   background-color: white;
+}
+
+/*a parte de cima do conteudo central*/
+.sub-topo{
+    padding: 15px;
+    float: left;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 0, 106);
+}
+
+.sub-topo ul, header ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.float-left{
+    float: left;
+    text-align: center;
+}
+
+.float-right{
+    float: right;
+    text-align: center;
+}
+
+.verMais{
+    margin-top: -25px;
+}
+
+.linha{
+    margin: 10px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+/*-----------------------------------lateral esquerda---------------------------------------------*/
+
+/*todas as listas do site*/
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul { /*ul que está dentro do menu - lateral esquerda*/
+    margin: 5px;
+    padding: 5px;
+}
+
+.menu ul li { /*li dentro de ul que está dentro da lateral esquerda*/
+    padding: 3px;
+    margin: 7px 2px;
+}
+
+.menu ul li a { /*a dentro de li dentro de ul que está dentro da lateral esquerda*/
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(255, 0, 106);
+    text-align: center;
+    padding: 50px 5px;
+}
+
+.menu ul li a:hover { /*quando passar o mouse em cima do link da barra lateral*/
+    color: black;
+}
+
+/*------deixando a página marcada no menu quando se está dentro dela-------*/
+body.body-calendario .menu ul li a#link-calendario,
+body.body-fichario .menu ul li a#link-fichario,
+body.body-financas .menu ul li a#link-financas
+{
+    color: white;
+    background-color: rgb(255, 0, 106);
+}
+
+/*--------------------rodapé---------------------*/
+footer, header{
+    height: 50px;
+    background-color: rgb(255, 0, 106);
+}
