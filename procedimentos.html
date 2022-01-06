@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+
+        <title>Procedimentos</title>
+		<meta charset="utf-8">
+		
+        <!-- Meu estilo CSS -->
+		<link rel="stylesheet" type="text/css" href="css/estilo-interno.css">
+
+    </head>
+    <body class="body-calendario">
+
+        <header> 
+
+            <ul>
+                <li>aqui no topo terá o mural de notificações left e o login do usuário right</li>
+                <li>
+                    <div class="float-right"> <img style="width: 40px;" src="imagens/perfil.png"> </div>
+                    <div class="float-left" style="margin-top: 10px;"> Usuário </div>
+                </li>
+            </ul>
+            
+        </header>
+
+        <nav>
+            <ul>
+                <li>Calendário</li>
+                <li>Fichário</li>
+                <li>Finanças</li>
+                <li><a href="materiais.html">Materiais</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="procedimentos.html">Procedimentos</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-principal"> <!-- início do container principal -->
+
+            <aside class="col-2 menu"> <!-- início da lateral esquerda -->
+                
+                <div class="menu"> <!-- Início da div que contém o menu -->
+                    <ul>
+                        <li>
+                            <a id="link-calendario" href="calendario.html">Calendário</a> 
+                        </li>
+                        <li>
+                            <a id="link-fichario" href="fichario.html">Fichário</a>
+                        </li>
+                        <li>
+                            <a id="link-financas" href="financas.html">Finanças</a>
+                        </li>
+                    </ul>
+                </div> <!-- fim da div que contém o menu -->
+
+            </aside> <!-- fim da lateral esquerda -->
+    
+            <div class="col-10">  <!-- início da coluna do meio -->
+
+                <div class="sub-topo">
+
+                    <p>Procedimentos cadastrados no sistema</p>
+
+                    <ul>
+                        <li></li>
+                        <li><a href="procedimento.html">Adicionar novo</a></li>
+                    </ul>
+                
+                </div>
+
+                <div class="conteudo">
+                    <p class="comentario">
+                        lista de procedimentos em ordem alfabética por default, ao clicar em ver mais, 
+                        mostra mais dados do procedimento
+                    </p>
+    
+                    <!-- essa lista deve ser dinamica, o id da classe onde fica as demais informações do cliente deve ser gerado
+                            automaticamente pra ser passado pra função -->
+    
+                    <!--alterar também o ver mais para ver menos quando a div estiver a mostra-->
+    
+                    <div class="linha">
+    
+                        <div>Design de Sobrancelhas</div>
+    
+                        <button onclick="mostrarEsconderInformacoes('procedimento-1-info')"
+                            class="float-right verMais">ver mais</button>
+    
+                        <div id="procedimento-1-info" class="display-none">
+                            
+                            <p class="comentario">
+                                duração do procedimento <br> valor padrão do procedimento <br> padrão de tempo de retorno do cliente...
+                            </p>
+    
+                        </div>
+    
+                    </div>
+                    <div class="linha">
+    
+                        <div>Drenagem Linfática</div>
+    
+                        <button onclick="mostrarEsconderInformacoes('procedimento-2-info')"
+                            class="float-right verMais">ver mais</button>
+    
+                        <div id="procedimento-2-info" class="display-none">
+                            
+                            <p class="comentario">
+                                duração do procedimento <br> valor padrão do procedimento <br> padrão de tempo de retorno do cliente...
+                            </p>
+    
+                        </div>
+    
+                    </div>
+                    <div class="linha">
+    
+                        <div>Extensão de Cílios</div>
+    
+                        <button onclick="mostrarEsconderInformacoes('procedimento-3-info')"
+                            class="float-right verMais">ver mais</button>
+    
+                        <div id="procedimento-3-info" class="display-none">
+                            
+                            <p class="comentario">
+                                duração do procedimento <br> valor padrão do procedimento <br> padrão de tempo de retorno do cliente...
+                            </p>
+    
+                        </div>
+    
+                    </div>   
+                </div> 
+
+            </div> <!-- fim da coluna do meio -->
+
+        </div> <!-- fim do container principal -->
+
+        <footer> aqui é o rodapé </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

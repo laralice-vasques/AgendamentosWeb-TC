@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 
-        <title>Calendario</title>
+        <title>Agendamento</title>
 		<meta charset="utf-8">
 		
         <!-- Meu estilo CSS -->
@@ -23,9 +23,20 @@
             
         </header>
 
+        <nav>
+            <ul>
+                <li>Calendário</li>
+                <li>Fichário</li>
+                <li>Finanças</li>
+                <li><a href="materiais.html">Materiais</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="procedimentos.html">Procedimentos</a></li>
+            </ul>
+        </nav>
+
         <div class="container-principal"> <!-- início do container principal -->
 
-            <nav class="col-2 menu"> <!-- início da lateral esquerda -->
+            <aside class="col-2 menu"> <!-- início da lateral esquerda -->
                 
                 <div class="menu"> <!-- Início da div que contém o menu -->
                     <ul>
@@ -41,27 +52,26 @@
                     </ul>
                 </div> <!-- fim da div que contém o menu -->
 
-            </nav> <!-- fim da lateral esquerda -->
+            </aside> <!-- fim da lateral esquerda -->
     
             <div class="col-10">  <!-- início da coluna do meio -->
 
-                <div class="coluna-central">
+                <div class="sub-topo">
 
-                    <div class="sub-topo">
-
-                        <ul>
-                            <li><a href="calendario.html">Voltar</a></li>
-                            <li></li>
-                        </ul>
+                    <ul>
+                        <li><a href="calendario.html">Voltar</a></li>
+                        <li></li>
+                    </ul>
                 
-                    </div>
+                </div>
 
-                    creio que isso deva ser um formulário para criar um novo objeto do tipo atendimento
+                <p class="comentario">formulário para criar um novo objeto do tipo atendimento</p>
 
-                    <div class="coluna">lista de clientes para adicionar ou cadastrar um</div>
-                    <div class="coluna"> lista de procedimentos para selecionar um ou vários, ou cadastrar um</div>
-                    <div class="coluna"> lista de horários disponíveis de acordo com os procedimentos selecionados (o tempo de duração do atendimento é calculado pela soma da duração de cada procedimento)</div>
-                    <div class="coluna">botão de agendar </div>
+                <div class="conteudo">
+                    <div class="linha">lista de clientes para adicionar ou cadastrar um</div>
+                    <div class="linha"> lista de procedimentos para selecionar um ou vários, ou cadastrar um</div>
+                    <div class="linha"> lista de horários disponíveis de acordo com os procedimentos selecionados (o tempo de duração do atendimento é calculado pela soma da duração de cada procedimento)</div>
+                    <div class="linha">botão de agendar </div>   
                 </div> 
 
             </div> <!-- fim da coluna do meio -->

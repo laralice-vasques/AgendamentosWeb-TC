@@ -2,21 +2,22 @@
 <html lang="pt-br">
 	<head>
 
-        <title>Calendário</title>
+        <title>Gráficos</title>
 		<meta charset="utf-8">
 		
-        <!-- Meu estilo CSS -->
 		<link rel="stylesheet" type="text/css" href="css/estilo-interno.css">
 
     </head>
-    <body class="body-calendario">
+    <body class="body-financas">
 
         <header> 
 
             <ul>
                 <li>aqui no topo terá o mural de notificações left e o login do usuário right</li>
                 <li>
-                    <div class="float-right"> <img style="width: 40px;" src="imagens/perfil.png"> </div>
+                    <div class="float-right"> 
+                        <img style="width: 40px" src="imagens/perfil.png"> 
+                    </div>
                     <div class="float-left" style="margin-top: 10px;"> Usuário </div>
                 </li>
             </ul>
@@ -56,21 +57,29 @@
     
             <div class="col-10">  <!-- início da coluna do meio -->
 
-
                 <div class="sub-topo">
 
                     <ul>
-                        <li></li>
-                        <li><a href="agendamento.html">adicionar novo agendamento</a></li>
+                        <li><a href="financas.html">Voltar</a></li>
+                        <li>Filtrar</li>
                     </ul>
-
+    
                 </div>
 
-                <div class="conteudo" style="height: 100px;">
-                    aqui fica o calendário
-                </div> 
+                <div class="conteudo">
 
+                    <div class="float-left graficos" style="width: 50%;">
+                        dados de entrada, calculados pela aplicação ao consolidar um atendimento 
+                        e inserir o valor que foi lucrado
+                    </div>
+                    <div class="float-right graficos" style="width: 50%;">
+                        dados de saída, inseridos manualmente a cada compra de material
+                    </div>
 
+                    <p class="comentario" style="clear: both;">os dados devem ser filtrados por intervalos de data</p>
+
+                </div>
+                
             </div> <!-- fim da coluna do meio -->
 
         </div> <!-- fim do container principal -->

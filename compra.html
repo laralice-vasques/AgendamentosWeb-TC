@@ -2,21 +2,22 @@
 <html lang="pt-br">
 	<head>
 
-        <title>Calendário</title>
+        <title>Edição Compra</title>
 		<meta charset="utf-8">
 		
-        <!-- Meu estilo CSS -->
 		<link rel="stylesheet" type="text/css" href="css/estilo-interno.css">
 
     </head>
-    <body class="body-calendario">
+    <body class="body-financas">
 
         <header> 
 
             <ul>
                 <li>aqui no topo terá o mural de notificações left e o login do usuário right</li>
                 <li>
-                    <div class="float-right"> <img style="width: 40px;" src="imagens/perfil.png"> </div>
+                    <div class="float-right"> 
+                        <img style="width: 40px" src="imagens/perfil.png"> 
+                    </div>
                     <div class="float-left" style="margin-top: 10px;"> Usuário </div>
                 </li>
             </ul>
@@ -56,21 +57,36 @@
     
             <div class="col-10">  <!-- início da coluna do meio -->
 
-
                 <div class="sub-topo">
 
                     <ul>
+                        <li><a href="financas.html">Voltar</a></li>
                         <li></li>
-                        <li><a href="agendamento.html">adicionar novo agendamento</a></li>
                     </ul>
-
+    
                 </div>
 
-                <div class="conteudo" style="height: 100px;">
-                    aqui fica o calendário
-                </div> 
+                <div class="conteudo">
 
+                    <p class="comentario"> seleciona o material (ou manda pra tela de adicionar um), 
+                        insere quanto gastou com aquele material e a data da compra
+                    </p>
 
+                    <div class="linha">
+                        <a href="material.html" class="float-right">Não encontrou o material? Adicione um</a>
+                        lista com os materiais disponíveis e botão pra adicionar um que não esteja na lista
+                    </div>
+                    <div class="linha">
+                        campo para adicionar o valor
+                    </div>
+                    <div class="linha">
+                        campo para adicionar a data da compra
+                    </div>
+                    <div class="linha">
+                        botão de adicionar
+                    </div>
+                </div>
+                
             </div> <!-- fim da coluna do meio -->
 
         </div> <!-- fim do container principal -->

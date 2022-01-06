@@ -1,76 +1,87 @@
 <!doctype html>
 <html lang="pt-br">
-	<head>
 
-        <title>Calendario</title>
-		<meta charset="utf-8">
-		
-		<link rel="stylesheet" type="text/css" href="css/estilo-interno.css">
+<head>
 
-        <link rel="stylesheet" type="text/css" href="css/estilo-mediaqueries.css">
+    <title>Edição Ficha</title>
+    <meta charset="utf-8">
 
-    </head>
-    <body class="body-fichario">
+    <link rel="stylesheet" type="text/css" href="css/estilo-interno.css">
+</head>
 
-        <header> 
+<body class="body-fichario">
 
-            <ul>
-                <li>aqui no topo terá o mural de notificações left e o login do usuário right</li>
-                <li>
-                    <div class="float-right"> <img style="width: 40px;" src="imagens/perfil.png"> </div>
-                    <div class="float-left" style="margin-top: 10px;"> Usuário </div>
-                </li>
-            </ul>
-            
-        </header>
+    <header>
 
-        <div class="container-principal"> <!-- início do container principal -->
+        <ul>
+            <li>aqui no topo terá o mural de notificações left e o login do usuário right</li>
+            <li>
+                <div class="float-right"> <img style="width: 40px;" src="imagens/perfil.png"> </div>
+                <div class="float-left" style="margin-top: 10px;"> Usuário </div>
+            </li>
+        </ul>
 
-            <nav class="col-2 menu"> <!-- início da lateral esquerda -->
+    </header>
+
+    <nav>
+        <ul>
+            <li>Calendário</li>
+            <li>Fichário</li>
+            <li>Finanças</li>
+            <li><a href="materiais.html">Materiais</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="procedimentos.html">Procedimentos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-principal"> <!-- início do container principal -->
+
+        <aside class="col-2 menu"> <!-- início da lateral esquerda -->
+
+            <div class="menu"> <!-- Início da div que contém o menu -->
                 
-                <div class="menu"> <!-- Início da div que contém o menu -->
-                    <ul>
-                        <li>
-                            <a id="link-calendario" href="calendario.html">Calendário</a> 
-                        </li>
-                        <li>
-                            <a id="link-fichario" href="fichario.html">Fichário</a>
-                        </li>
-                        <li>
-                            <a id="link-financas" href="financas.html">Finanças</a>
-                        </li>
-                    </ul>
-                </div> <!-- fim da div que contém o menu -->
+                <ul>
+                    <li>
+                        <a id="link-calendario" href="calendario.html">Calendário</a>
+                    </li>
+                    <li>
+                        <a id="link-fichario" href="fichario.html">Fichário</a>
+                    </li>
+                    <li>
+                        <a id="link-financas" href="financas.html">Finanças</a>
+                    </li>
+                </ul>
+            </div> <!-- fim da div que contém o menu -->
 
-            </nav> <!-- fim da lateral esquerda -->
-    
-            <div class="col-10">  <!-- início da coluna do meio -->
+        </aside> <!-- fim da lateral esquerda -->
 
-                <div class="coluna-central">
+        <div class="col-10">  <!-- inicio da coluna central -->
 
-                    <div class="sub-topo"> <!-- inicio do sub topo -->
+            <div class="sub-topo"> <!-- inicio do sub topo -->
 
-                        <ul>
-                            <li><a href="fichario.html">Voltar</a></li>
-                            <li></li>
-                        </ul>
+                <ul>
+                    <li><a href="fichario.html">Voltar</a></li>
+                    <li></li>
+                </ul>
 
-                   </div> <!-- fim do sub topo -->
+            </div> <!-- fim do sub topo -->
 
-                    <div class="conteudo" style="padding: 200px;"> <!-- inicio do conteudo -->
+            <div class="conteudo" style="padding: 200px;"> <!-- inicio do conteudo -->
 
-                        Os dados dessa página serão de acordo com o id do cliente, 
-                        uma só página modificada de acordo com o id na url
+                Os dados dessa página serão de acordo com o id do cliente,
+                uma só página modificada de acordo com o id na url <br><br>
 
-                    </div> <!-- fim do conteudo -->
-                </div> 
+                a página é carregada em branco para adicionar um novo cliente, a depender do id
 
-            </div> <!-- fim da coluna do meio -->
+            </div> <!-- fim do conteudo -->
 
-        </div> <!-- fim do container principal -->
+        </div> <!-- fim da coluna do meio -->
 
-        <footer> aqui é o rodapé </footer>
+    </div> <!-- fim do container principal -->
 
-        <script src="js/fichario.js"></script>
-    </body>
+    <footer> aqui é o rodapé </footer>
+
+    <script src="js/fichario.js"></script>
+</body>
+
 </html>
